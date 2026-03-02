@@ -2,6 +2,7 @@ import click
 from . import FedoraWork
 from .fedora import FedoraCollection
 from csv import DictWriter
+from tqdm import tqdm
 
 
 @click.command()
@@ -11,7 +12,7 @@ def ferry(uri):
     members = collection.get_members()
 
     rows = []
-    for member in members:
+    for member in tqdm(members):
         work = FedoraWork(member)
         row = {k: "|".join(v) for k, v in work.metadata_to_dict().items()}
         row["files"] = "|".join(work.get_ordered_member_files())
