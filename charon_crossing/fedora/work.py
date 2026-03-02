@@ -107,33 +107,33 @@ class FedoraWork(FedoraObject):
 
     def metadata_to_dict(self):
         description = {
-            "Alternative Title": [],
-            "Date Created": [],
-            "Subject": [],
-            "Creator": [],
-            "Publisher": [],
-            "Collection": [],
-            "Format": [],
-            "Type": [],
-            "Medium": [],
-            "Description": [],
-            "Language": [],
-            "Extent": []
+            "dcterms_alternative": [],
+            "dcterms_datecreated": [],
+            "dc_subject": [],
+            "dc_creator": [],
+            "dc_publisher": [],
+            "dcterms_ispartof": [],
+            "dc_format": [],
+            "dc_type": [],
+            "dcterms_medium": [],
+            "dc_description": [],
+            "dc_language": [],
+            "dcterms_extent": []
         }
 
         predicates_map = {
-            "Creator": f"{self.namespaces.dc}creator",
-            "Subject": f"{self.namespaces.dc}subject",
-            "Description": f"{self.namespaces.dc}description",
-            "Language": f"{self.namespaces.dc}language",
-            "Type": f"{self.namespaces.dc}type",
-            "Format": f"{self.namespaces.dc}format",
-            "Publisher": f"{self.namespaces.dc}publisher",
-            "Date Created": f"{self.namespaces.dcterms}created",
-            "Collection": f"{self.namespaces.dcterms}isPartOf",
-            "Medium": f"{self.namespaces.dcterms}medium",
-            "Extent": f"{self.namespaces.dcterms}extent",
-            "Alternative Title": f"{self.namespaces.dcterms}alternative"
+            "dc_creator": f"{self.namespaces.dc}creator",
+            "dc_subject": f"{self.namespaces.dc}subject",
+            "dc_description": f"{self.namespaces.dc}description",
+            "dc_language": f"{self.namespaces.dc}language",
+            "dc_type": f"{self.namespaces.dc}type",
+            "dc_format": f"{self.namespaces.dc}format",
+            "dc_publisher": f"{self.namespaces.dc}publisher",
+            "dcterms_datecreated": f"{self.namespaces.dcterms}created",
+            "dcterms_ispartof": f"{self.namespaces.dcterms}isPartOf",
+            "dcterms_medium": f"{self.namespaces.dcterms}medium",
+            "dcterms_extent": f"{self.namespaces.dcterms}extent",
+            "dcterms_alternative": f"{self.namespaces.dcterms}alternative"
         }
 
         for s, p, o in self.descriptive_metadata:
