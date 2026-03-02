@@ -106,41 +106,25 @@ class FedoraWork(FedoraObject):
         ))
 
     def metadata_to_dict(self):
-        description = {
-            "dcterms_alternative": [],
-            "dcterms_datecreated": [],
-            "dc_subject": [],
-            "dc_creator": [],
-            "dc_publisher": [],
-            "dcterms_ispartof": [],
-            "dc_format": [],
-            "dc_type": [],
-            "dcterms_medium": [],
-            "dc_description": [],
-            "dc_language": [],
-            "dcterms_extent": []
-        }
-
         predicates_map = {
-            "dc_creator": f"{self.namespaces.dc}creator",
-            "dc_subject": f"{self.namespaces.dc}subject",
-            "dc_description": f"{self.namespaces.dc}description",
-            "dc_language": f"{self.namespaces.dc}language",
-            "dc_type": f"{self.namespaces.dc}type",
-            "dc_format": f"{self.namespaces.dc}format",
-            "dc_publisher": f"{self.namespaces.dc}publisher",
-            "dcterms_datecreated": f"{self.namespaces.dcterms}created",
-            "dcterms_ispartof": f"{self.namespaces.dcterms}isPartOf",
-            "dcterms_medium": f"{self.namespaces.dcterms}medium",
-            "dcterms_extent": f"{self.namespaces.dcterms}extent",
-            "dcterms_alternative": f"{self.namespaces.dcterms}alternative"
+            f"{self.namespaces.dcterms}alternative": "dcterms_alternative",
+            f"{self.namespaces.dcterms}created": "dcterms_datecreated",
+            f"{self.namespaces.dc}subject": "dc_subject",
+            f"{self.namespaces.dc}creator": "dc_creator",
+            f"{self.namespaces.dc}publisher": "dc_publisher",
+            f"{self.namespaces.dcterms}isPartOf": "dcterms_ispartof",
+            f"{self.namespaces.dc}format": "dc_format",
+            f"{self.namespaces.dc}type": "dc_type",
+            f"{self.namespaces.dcterms}medium": "dcterms_medium",
+            f"{self.namespaces.dc}description": "dc_description",
+            f"{self.namespaces.dc}language": "dc_language",
+            f"{self.namespaces.dcterms}extent": "dcterms_extent",
         }
-
-        for s, p, o in self.descriptive_metadata:
-            for key, pred in predicates_map.items():
-                if str(p) == pred:
-                    description[key].append(str(o))
-
+        description = {label: [] for label in predicates_map.values()}
+        for _, p, o in self.descriptive_metadata:
+            label = predicates_map.get(str(p))
+            if label:
+                description[label].append(str(o))
         return description
 
 
