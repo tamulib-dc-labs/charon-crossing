@@ -12,6 +12,7 @@ class Namespaces:
         self.rdfs = "http://www.w3.org/1999/02/22-rdf-syntax-ns"
         self.ldp = "http://www.w3.org/ns/ldp#"
         self.ore = "http://www.openarchives.org/ore/terms#"
+        self.fedora = "http://fedora.info/definitions/v4/repository#"
 
 
 class FedoraObject:
