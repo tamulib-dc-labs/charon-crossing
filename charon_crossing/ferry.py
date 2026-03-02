@@ -5,7 +5,12 @@ from csv import DictWriter
 from tqdm import tqdm
 
 
-@click.command()
+@click.group()
+def cli():
+    pass
+
+
+@cli.command()
 @click.argument("uri")
 def ferry(uri):
     collection = FedoraCollection(uri)
@@ -24,5 +29,26 @@ def ferry(uri):
         writer.writerows(rows)
 
 
+@cli.command()
+@click.argument("uri")
+def get_members(uri):
+    all_collections = []
+    collection = FedoraCollection(uri)
+    for member in collection.get_contains():
+        if "_objects" not in member:
+            current = FedoraCollection(member)
+            all_collections.append(
+                {
+                    "uri": str(member),
+                    "created": str(current.get_created()),
+                    "works": len(current.get_members()),
+                }
+            )
+    with open("collections.csv", "w", newline="") as f:
+        writer = DictWriter(f, fieldnames=list(all_collections[0].keys()))
+        writer.writeheader()
+        writer.writerows(all_collections)
+
+
 if __name__ == "__main__":
-    ferry()
+    cli()
