@@ -14,7 +14,10 @@ rdflib-jsonld = "^0.6.2"
 iiif-prezi3 = "^3.0.0"
 tqdm = "^4.67.1"
 sparqlwrapper = "^2.0.0"
+click = "^8.0.0"
 
+[tool.poetry.scripts]
+ferry = "charon_crossing.ferry:ferry"
 
 [build-system]
 requires = ["poetry-core"]
