@@ -1,5 +1,6 @@
 from .object import FedoraObject
 from .proxy import FedoraProxy
+from .file import FedoraFile
 from rdflib import URIRef, Graph
 
 
@@ -27,6 +28,7 @@ class FedoraWork(FedoraObject):
             f"{self.namespaces.dc}publisher",
             f"{self.namespaces.dc}title",
             f"{self.namespaces.dc}type",
+            f"{self.namespaces.dc}rights",
             f"{self.namespaces.dcterms}alternative",
             f"{self.namespaces.dcterms}created",
             f"{self.namespaces.dcterms}extent",
@@ -78,6 +80,20 @@ class FedoraWork(FedoraObject):
         current = FedoraProxy(uri=str(self.iana_first))
         while current:
             ordered_members.append(current.get_proxy_for())
+            if current.has_iana_next:
+                current = FedoraProxy(uri=str(current.get_next()))
+            else:
+                current = None
+        return ordered_members
+
+    def get_ordered_member_files(self):
+        ordered_members = []
+        current = FedoraProxy(uri=str(self.iana_first))
+        while current:
+            current_part = FedoraFile(uri=str(current.get_proxy_for()))
+            current_part_files = current_part.get_files()
+            for current_file in current_part_files:
+                ordered_members.append(str(current_file))
             if current.has_iana_next:
                 current = FedoraProxy(uri=str(current.get_next()))
             else:
