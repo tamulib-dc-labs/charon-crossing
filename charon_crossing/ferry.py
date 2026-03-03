@@ -23,7 +23,7 @@ def ferry(uri):
         row["files"] = "|".join(work.get_ordered_member_files())
         rows.append(row)
 
-    with open(f"{collection.uri.split('/')[-1]}.csv", "w", newline="") as f:
+    with open(f"{collection.uri.split('/')[-1]}.csv", "w", newline="", encoding="utf-8") as f:
         writer = DictWriter(f, fieldnames=list(rows[0].keys()))
         writer.writeheader()
         writer.writerows(rows)
@@ -44,7 +44,7 @@ def get_members(uri):
                     "works": len(current.get_members()),
                 }
             )
-    with open("collections.csv", "w", newline="") as f:
+    with open("collections.csv", "w", newline="", encoding="utf-8") as f:
         writer = DictWriter(f, fieldnames=list(all_collections[0].keys()))
         writer.writeheader()
         writer.writerows(all_collections)
