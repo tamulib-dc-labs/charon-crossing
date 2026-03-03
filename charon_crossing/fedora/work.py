@@ -115,6 +115,36 @@ class FedoraWork(FedoraObject):
                 key = f"dcterms_{p_str[len(self.namespaces.dcterms):]}"
             elif p_str.startswith(self.namespaces.fedora):
                 key = f"fedora_{p_str[len(self.namespaces.fedora):]}"
+            elif p_str.startswith(self.namespaces.ebucore):
+                key = f"ebucore_{p_str[len(self.namespaces.ebucore):]}"
+            elif p_str.startswith(self.namespaces.ldp):
+                key = f"ldp_{p_str[len(self.namespaces.ldp):]}"
+            elif p_str.startswith(self.namespaces.premis):
+                key = f"premis_{p_str[len(self.namespaces.premis):]}"
+            elif p_str.startswith(self.namespaces.relations):
+                key = f"relations_{p_str[len(self.namespaces.relations):]}"
+            elif p_str.startswith(self.namespaces.tamudigital):
+                key = f"tamudigital_{p_str[len(self.namespaces.tamudigital):]}"
+            elif p_str.startswith(self.namespaces.tamulocal):
+                key = f"tamulocal_{p_str[len(self.namespaces.tamulocal):]}"
+            elif p_str.startswith(self.namespaces.title):
+                key = f"title_{p_str[len(self.namespaces.title):]}"
+            elif p_str.startswith(self.namespaces.schemaorg):
+                key = f"schema_{p_str[len(self.namespaces.schemaorg):]}"
+            elif p_str.startswith(self.namespaces.rights):
+                key = f"rights_{p_str[len(self.namespaces.rights):]}"
+            elif p_str.startswith(self.namespaces.subject):
+                key = f"subject_{p_str[len(self.namespaces.subject):]}"
+            elif p_str.startswith(self.namespaces.identifier):
+                key = f"identifier_{p_str[len(self.namespaces.identifier):]}"
+            elif p_str.startswith(self.namespaces.identifiertwo):
+                key = f"identifiertwo_{p_str[len(self.namespaces.identifiertwo):]}"
+            elif p_str.startswith(self.namespaces.foaf):
+                key = f"foaf_{p_str[len(self.namespaces.foaf):]}"
+            elif p_str.startswith(self.namespaces.bibframe):
+                key = f"bibframe_{p_str[len(self.namespaces.bibframe):]}"
+            elif p_str.startswith(self.namespaces.oretwo):
+                key = f"oretwo_{p_str[len(self.namespaces.oretwo):]}"
             else:
                 continue
             description.setdefault(key, []).append(str(o))
