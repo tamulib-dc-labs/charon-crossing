@@ -123,6 +123,7 @@ class FedoraWork(FedoraObject):
             f"{self.namespaces.dcterms}type": "dcterms_type",
             f"{self.namespaces.dcterms}medium": "dcterms_medium",
             f"{self.namespaces.dcterms}abstract": "dcterms_abstract",
+            f"{self.namespaces.dc}abstract": "dc_abstract",
             f"{self.namespaces.dc}summary": "dc_summary",
             f"{self.namespaces.dc}description": "dc_description",
             f"{self.namespaces.dc}language": "dc_language",
