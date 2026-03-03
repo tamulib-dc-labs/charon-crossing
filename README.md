@@ -10,37 +10,87 @@ poetry install
 
 ## CLI Usage
 
-The `ferry` command takes a Fedora collection URI and writes a CSV of descriptive metadata and ordered file members to the current directory. The output file is named after the last path segment of the URI.
+The `ferry` CLI provides two subcommands. Run `ferry --help` to see all options.
+
+---
+
+### `ferry ferry` — Export collection works to CSV
+
+Iterates the works in a Fedora collection and writes a CSV of descriptive metadata and ordered file URIs. The output file is named after the last path segment of the collection URI.
 
 ```bash
-ferry <collection-uri>
+ferry ferry <collection-uri>
 ```
 
 **Example:**
 
 ```bash
-ferry https://api.library.tamu.edu/fcrepo/rest/3b/6f/c3/25/3b6fc325-f6ca-41d8-b91e-8c5db3be8c13/graydiary-saf
+ferry ferry https://api.library.tamu.edu/fcrepo/rest/3b/6f/c3/25/3b6fc325-f6ca-41d8-b91e-8c5db3be8c13/graydiary-saf
 ```
 
-This produces `graydiary-saf.csv` with one row per work and the following columns:
+Produces `graydiary-saf.csv` with one row per work. Multi-valued fields are pipe-delimited (e.g. `History|Art`).
 
 | Column | Source |
-|---|---|
+|--------|--------|
 | `dcterms_alternative` | `dcterms:alternative` |
-| `dcterms_datecreated` | `dcterms:created` |
+| `dcterms_created` | `dcterms:created` |
+| `dcterms_issued` | `dcterms:issued` |
+| `dc_date` | `dc:date` |
 | `dc_subject` | `dc:subject` |
+| `dcterms_coverage` | `dcterms:coverage` |
+| `dcterms_temporal` | `dcterms:temporal` |
+| `dcterms_spatial` | `dcterms:spatial` |
 | `dc_creator` | `dc:creator` |
+| `dc_contributor` | `dc:contributor` |
 | `dc_publisher` | `dc:publisher` |
-| `dcterms_ispartof` | `dcterms:isPartOf` |
 | `dc_format` | `dc:format` |
 | `dc_type` | `dc:type` |
+| `dcterms_type` | `dcterms:type` |
 | `dcterms_medium` | `dcterms:medium` |
+| `dcterms_abstract` | `dcterms:abstract` |
+| `dc_summary` | `dc:summary` |
 | `dc_description` | `dc:description` |
 | `dc_language` | `dc:language` |
 | `dcterms_extent` | `dcterms:extent` |
+| `dc_identifier` | `dc:identifier` |
+| `dcterms_otherIdentifier` | `dcterms:otherIdentifier` |
+| `dcterms_URL` | `dcterms:URL` |
+| `dc_rights` | `dc:rights` |
+| `dcterms_rightsHolder` | `dcterms:rightsHolder` |
+| `dcterms_rightsURI` | `dcterms:rightsURI` |
+| `dcterms_accessRights` | `dcterms:accessRights` |
+| `dcterms_isPartOf` | `dcterms:isPartOf` |
+| `dcterms_isPartOfSeries` | `dcterms:isPartOfSeries` |
+| `dcterms_lcc` | `dcterms:lcc` |
+| `dc_citation` | `dc:citation` |
+| `dc_genre` | `dc:genre` |
 | `files` | Ordered file URIs via PCDM/IANA linked list |
 
-Multi-valued fields are pipe-delimited (e.g. `History|Art`).
+---
+
+### `ferry get-members` — List sub-collections as CSV
+
+Iterates the contents of a top-level Fedora container and writes a summary of each sub-collection to `collections.csv`.
+
+```bash
+ferry get-members <container-uri>
+```
+
+**Example:**
+
+```bash
+ferry get-members https://api.library.tamu.edu/fcrepo/rest/3b/6f/c3/25/3b6fc325-f6ca-41d8-b91e-8c5db3be8c13
+```
+
+Produces `collections.csv` with columns:
+
+| Column | Description |
+|--------|-------------|
+| `uri` | Full URI of the sub-collection |
+| `created` | Creation date of the sub-collection |
+| `works` | Number of works (`pcdm:hasMember`) in the sub-collection |
+
+---
 
 ## Library Usage
 
