@@ -106,46 +106,18 @@ class FedoraWork(FedoraObject):
         ))
 
     def metadata_to_dict(self):
-        predicates_map = {
-            f"{self.namespaces.dcterms}alternative": "dcterms_alternative",
-            f"{self.namespaces.dcterms}created": "dcterms_created",
-            f"{self.namespaces.dcterms}issued": "dcterms_issued",
-            f"{self.namespaces.dc}date": "dc_date",
-            f"{self.namespaces.dc}subject": "dc_subject",
-            f"{self.namespaces.dcterms}coverage": "dcterms_coverage",
-            f"{self.namespaces.dcterms}temporal": "dcterms_temporal",
-            f"{self.namespaces.dcterms}spatial": "dcterms_spatial",
-            f"{self.namespaces.dc}creator": "dc_creator",
-            f"{self.namespaces.dc}contributor": "dc_contributor",
-            f"{self.namespaces.dc}publisher": "dc_publisher",
-            f"{self.namespaces.dc}format": "dc_format",
-            f"{self.namespaces.dc}type": "dc_type",
-            f"{self.namespaces.dcterms}type": "dcterms_type",
-            f"{self.namespaces.dcterms}medium": "dcterms_medium",
-            f"{self.namespaces.dcterms}abstract": "dcterms_abstract",
-            f"{self.namespaces.dc}abstract": "dc_abstract",
-            f"{self.namespaces.dc}summary": "dc_summary",
-            f"{self.namespaces.dc}description": "dc_description",
-            f"{self.namespaces.dc}language": "dc_language",
-            f"{self.namespaces.dcterms}extent": "dcterms_extent",
-            f"{self.namespaces.dc}identifier": "dc_identifier",
-            f"{self.namespaces.dcterms}otherIdentifier": "dcterms_otherIdentifier",
-            f"{self.namespaces.dcterms}URL": "dcterms_URL",
-            f"{self.namespaces.dc}rights": "dc_rights",
-            f"{self.namespaces.dcterms}rightsHolder": "dcterms_rightsHolder",
-            f"{self.namespaces.dcterms}rightsURI": "dcterms_rightsURI",
-            f"{self.namespaces.dcterms}accessRights": "dcterms_accessRights",
-            f"{self.namespaces.dcterms}isPartOf": "dcterms_isPartOf",
-            f"{self.namespaces.dcterms}isPartOfSeries": "dcterms_isPartOfSeries",
-            f"{self.namespaces.dcterms}lcc": "dcterms_lcc",
-            f"{self.namespaces.dc}citation": "dc_citation",
-            f"{self.namespaces.dc}genre": "dc_genre",
-        }
-        description = {label: [] for label in predicates_map.values()}
-        for _, p, o in self.descriptive_metadata:
-            label = predicates_map.get(str(p))
-            if label:
-                description[label].append(str(o))
+        description = {}
+        for _, p, o in self.content:
+            p_str = str(p)
+            if p_str.startswith(self.namespaces.dc):
+                key = f"dc_{p_str[len(self.namespaces.dc):]}"
+            elif p_str.startswith(self.namespaces.dcterms):
+                key = f"dcterms_{p_str[len(self.namespaces.dcterms):]}"
+            elif p_str.startswith(self.namespaces.fedora):
+                key = f"fedora_{p_str[len(self.namespaces.fedora):]}"
+            else:
+                continue
+            description.setdefault(key, []).append(str(o))
         return description
 
 

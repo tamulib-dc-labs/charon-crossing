@@ -23,8 +23,9 @@ def ferry(uri):
         row["files"] = "|".join(work.get_ordered_member_files())
         rows.append(row)
 
+    fieldnames = list(dict.fromkeys(k for row in rows for k in row))
     with open(f"{collection.uri.split('/')[-1]}.csv", "w", newline="", encoding="utf-8") as f:
-        writer = DictWriter(f, fieldnames=list(rows[0].keys()))
+        writer = DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
         writer.writeheader()
         writer.writerows(rows)
 
