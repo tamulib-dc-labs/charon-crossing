@@ -34,7 +34,7 @@ def ferry(uri):
 def get_members(uri):
     all_collections = []
     collection = FedoraCollection(uri)
-    for member in collection.get_contains():
+    for member in tqdm(collection.get_contains()):
         if "_objects" not in member:
             current = FedoraCollection(member)
             all_collections.append(

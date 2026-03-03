@@ -25,7 +25,7 @@ class FedoraObject:
         headers = {
             'Accept': 'application/ld+json'
         }
-        r = httpx.get(self.uri, headers=headers, timeout=60)
+        r = httpx.get(self.uri, headers=headers, timeout=None)
         try:
             if r.status_code == 200:
                 g = Graph()
