@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "charon-crossing"
-version = "0.1.0"
+version = "0.3.0"
 description = ""
 authors = ["Mark Baggett <markpbaggett@gmail.com>"]
 license = "MIT"
@@ -17,7 +17,7 @@ sparqlwrapper = "^2.0.0"
 click = "^8.0.0"
 
 [tool.poetry.scripts]
-ferry = "charon_crossing.ferry:ferry"
+ferry = "charon_crossing.ferry:cli"
 
 [build-system]
 requires = ["poetry-core"]

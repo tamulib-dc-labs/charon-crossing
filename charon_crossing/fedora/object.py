@@ -12,6 +12,7 @@ class Namespaces:
         self.rdfs = "http://www.w3.org/1999/02/22-rdf-syntax-ns"
         self.ldp = "http://www.w3.org/ns/ldp#"
         self.ore = "http://www.openarchives.org/ore/terms#"
+        self.fedora = "http://fedora.info/definitions/v4/repository#"
 
 
 class FedoraObject:
@@ -24,7 +25,7 @@ class FedoraObject:
         headers = {
             'Accept': 'application/ld+json'
         }
-        r = httpx.get(self.uri, headers=headers, timeout=60)
+        r = httpx.get(self.uri, headers=headers, timeout=None)
         try:
             if r.status_code == 200:
                 g = Graph()
