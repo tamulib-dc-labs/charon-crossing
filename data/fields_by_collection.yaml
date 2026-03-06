@@ -1,0 +1,649 @@
+dc_abstract:
+  collections:
+  - alice_in_wonderland
+  - bryan-150
+  - la_linda_poblana
+dc_citation:
+  collections:
+  - alice_in_wonderland
+dc_contributor:
+  collections:
+  - basbanes-texts
+  - BasbanesEternalPassion
+  - berger_cloonan
+  - berger_cloonan_batch_4
+  - brazos-maps
+  - charting-texas
+  - cherokee-freedmen-corrected
+  - cherokee-freedmen
+  - com_class_rosters
+  - cvm-batch-1
+  - cvm-batch-2
+  - houston_oil_company_minutes
+  - london-collection
+  - london-maps-batch-2
+  - scifi-exhibit-2021
+  - Stephen_Powys_Marks_London_Collection
+  - time_of_resolve
+dc_coverage:
+  collections:
+  - charting-texas
+  - london-maps-batch-2
+dc_creator:
+  collections:
+  - alice_in_wonderland
+  - apfelbaum-ww1
+  - basbanes-texts
+  - BasbanesEternalPassion
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - brazos-maps
+  - bryan-150
+  - charting-texas
+  - cherokee-freedmen-corrected
+  - cherokee-freedmen
+  - cvm-batch-1
+  - cvm-batch-2
+  - graydiary-saf
+  - la_linda_poblana
+  - london-collection
+  - london-maps-batch-2
+  - scifi-exhibit-2021
+  - Stephen_Powys_Marks_London_Collection
+  - time_of_resolve
+dc_date:
+  collections:
+  - la_linda_poblana
+  - london-maps-batch-2
+dc_description:
+  collections:
+  - apfelbaum-ww1
+  - basbanes-texts
+  - BasbanesEternalPassion
+  - bryan-150
+  - charting-texas
+  - cherokee-freedmen-corrected
+  - cherokee-freedmen
+  - cvm-batch-1
+  - cvm-batch-2
+  - graydiary-saf
+  - houston_oil_company_minutes
+  - la_linda_poblana
+  - london-collection
+  - london-maps-batch-2
+  - scifi-exhibit-2021
+  - Stephen_Powys_Marks_London_Collection
+  - time_of_resolve
+dc_extent:
+  collections:
+  - la_linda_poblana
+dc_format:
+  collections:
+  - apfelbaum-ww1
+  - basbanes-texts
+  - BasbanesEternalPassion
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - berger_cloonan_batch_4
+  - berger_cloonan_batch_a
+  - brazos-maps
+  - bryan-150
+  - charting-texas
+  - cherokee-freedmen-corrected
+  - cherokee-freedmen
+  - com_class_rosters
+  - cvm-batch-1
+  - cvm-batch-2
+  - graydiary-saf
+  - la_linda_poblana
+  - london-collection
+  - london-maps-batch-2
+  - scifi-exhibit-2021
+  - Stephen_Powys_Marks_London_Collection
+  - time_of_resolve
+dc_genre:
+  collections:
+  - la_linda_poblana
+dc_identifer:
+  collections:
+  - scifi-exhibit-2021
+dc_identifier:
+  collections:
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - berger_cloonan_batch_4
+  - berger_cloonan_batch_a
+  - brazos-maps
+  - charting-texas
+  - cvm-batch-1
+  - cvm-batch-2
+  - houston_oil_company_minutes
+  - london-maps-batch-2
+  - time_of_resolve
+dc_language:
+  collections:
+  - basbanes-texts
+  - BasbanesEternalPassion
+  - brazos-maps
+  - charting-texas
+  - cherokee-freedmen-corrected
+  - cherokee-freedmen
+  - cvm-batch-1
+  - graydiary-saf
+  - la_linda_poblana
+  - london-collection
+  - london-maps-batch-2
+  - scifi-exhibit-2021
+  - Stephen_Powys_Marks_London_Collection
+  - time_of_resolve
+dc_publisher:
+  collections:
+  - apfelbaum-ww1
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - berger_cloonan_batch_4
+  - berger_cloonan_batch_a
+  - bryan-150
+  - com_class_rosters
+  - london-collection
+  - london-maps-batch-2
+  - scifi-exhibit-2021
+  - Stephen_Powys_Marks_London_Collection
+  - time_of_resolve
+dc_relation:
+  collections:
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - berger_cloonan_batch_a
+dc_rights:
+  collections:
+  - alice_in_wonderland
+  - apfelbaum-ww1
+  - basbanes-texts
+  - BasbanesEternalPassion
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - berger_cloonan_batch_4
+  - berger_cloonan_batch_a
+  - brazos-maps
+  - bryan-150
+  - charting-texas
+  - cherokee-freedmen-corrected
+  - cherokee-freedmen
+  - com_class_rosters
+  - cvm-batch-1
+  - cvm-batch-2
+  - graydiary-saf
+  - houston_oil_company_minutes
+  - la_linda_poblana
+  - london-collection
+  - london-maps-batch-2
+  - scifi-exhibit-2021
+  - Stephen_Powys_Marks_London_Collection
+  - time_of_resolve
+dc_subject:
+  collections:
+  - alice_in_wonderland
+  - apfelbaum-ww1
+  - basbanes-texts
+  - BasbanesEternalPassion
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - berger_cloonan_batch_4
+  - berger_cloonan_batch_a
+  - brazos-maps
+  - bryan-150
+  - charting-texas
+  - cherokee-freedmen-corrected
+  - cherokee-freedmen
+  - com_class_rosters
+  - cvm-batch-1
+  - cvm-batch-2
+  - graydiary-saf
+  - houston_oil_company_minutes
+  - la_linda_poblana
+  - london-collection
+  - london-maps-batch-2
+  - scifi-exhibit-2021
+  - Stephen_Powys_Marks_London_Collection
+  - time_of_resolve
+dc_summary:
+  collections:
+  - scifi-exhibit-2021
+dc_title:
+  collections:
+  - alice_in_wonderland
+  - apfelbaum-ww1
+  - basbanes-texts
+  - BasbanesEternalPassion
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - berger_cloonan_batch_4
+  - berger_cloonan_batch_a
+  - brazos-maps
+  - bryan-150
+  - charting-texas
+  - cherokee-freedmen-corrected
+  - cherokee-freedmen
+  - com_class_rosters
+  - cvm-batch-1
+  - cvm-batch-2
+  - graydiary-saf
+  - houston_oil_company_minutes
+  - la_linda_poblana
+  - london-collection
+  - london-maps-batch-2
+  - scifi-exhibit-2021
+  - Stephen_Powys_Marks_London_Collection
+  - time_of_resolve
+dc_title:alternative:
+  collections:
+  - la_linda_poblana
+dc_type:
+  collections:
+  - apfelbaum-ww1
+  - basbanes-texts
+  - BasbanesEternalPassion
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - berger_cloonan_batch_4
+  - berger_cloonan_batch_a
+  - bryan-150
+  - cherokee-freedmen-corrected
+  - cherokee-freedmen
+  - cvm-batch-1
+  - cvm-batch-2
+  - houston_oil_company_minutes
+  - london-collection
+  - london-maps-batch-2
+  - scifi-exhibit-2021
+  - Stephen_Powys_Marks_London_Collection
+dcterms_IsPartOf:
+  collections:
+  - la_linda_poblana
+dcterms_URL:
+  collections:
+  - alice_in_wonderland
+dcterms_abstract:
+  collections:
+  - alice_in_wonderland
+  - apfelbaum-ww1
+  - basbanes-texts
+  - BasbanesEternalPassion
+  - cherokee-freedmen-corrected
+  - cherokee-freedmen
+  - cvm-batch-1
+  - cvm-batch-2
+  - time_of_resolve
+dcterms_accessRights:
+  collections:
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - berger_cloonan_batch_4
+  - berger_cloonan_batch_a
+dcterms_alternative:
+  collections:
+  - apfelbaum-ww1
+  - london-collection
+  - Stephen_Powys_Marks_London_Collection
+dcterms_coverage:
+  collections:
+  - basbanes-texts
+  - BasbanesEternalPassion
+dcterms_created:
+  collections:
+  - alice_in_wonderland
+  - apfelbaum-ww1
+  - basbanes-texts
+  - BasbanesEternalPassion
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - berger_cloonan_batch_4
+  - berger_cloonan_batch_a
+  - bryan-150
+  - cherokee-freedmen-corrected
+  - cherokee-freedmen
+  - com_class_rosters
+  - cvm-batch-1
+  - cvm-batch-2
+  - graydiary-saf
+  - london-collection
+  - Stephen_Powys_Marks_London_Collection
+  - time_of_resolve
+dcterms_extent:
+  collections:
+  - apfelbaum-ww1
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - berger_cloonan_batch_4
+  - berger_cloonan_batch_a
+  - bryan-150
+  - cherokee-freedmen-corrected
+  - cherokee-freedmen
+  - cvm-batch-1
+  - cvm-batch-2
+  - graydiary-saf
+  - houston_oil_company_minutes
+  - london-collection
+  - london-maps-batch-2
+  - scifi-exhibit-2021
+  - Stephen_Powys_Marks_London_Collection
+dcterms_isPartOf:
+  collections:
+  - alice_in_wonderland
+  - apfelbaum-ww1
+  - bryan-150
+  - cherokee-freedmen-corrected
+  - cherokee-freedmen
+  - cvm-batch-1
+  - cvm-batch-2
+  - london-collection
+  - scifi-exhibit-2021
+  - Stephen_Powys_Marks_London_Collection
+dcterms_isPartOfSeries:
+  collections:
+  - alice_in_wonderland
+dcterms_issued:
+  collections:
+  - brazos-maps
+  - charting-texas
+  - london-collection
+  - scifi-exhibit-2021
+  - Stephen_Powys_Marks_London_Collection
+dcterms_lcc:
+  collections:
+  - charting-texas
+  - london-maps-batch-2
+dcterms_medium:
+  collections:
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - berger_cloonan_batch_4
+  - berger_cloonan_batch_a
+  - london-collection
+  - Stephen_Powys_Marks_London_Collection
+dcterms_otherIdentifier:
+  collections:
+  - alice_in_wonderland
+dcterms_provenance:
+  collections:
+  - berger_cloonan_batch_a
+  - cvm-batch-1
+dcterms_rightsHolder:
+  collections:
+  - alice_in_wonderland
+dcterms_rightsURI:
+  collections:
+  - alice_in_wonderland
+dcterms_spatial:
+  collections:
+  - apfelbaum-ww1
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - berger_cloonan_batch_4
+  - berger_cloonan_batch_a
+  - brazos-maps
+  - bryan-150
+  - charting-texas
+  - cherokee-freedmen-corrected
+  - cherokee-freedmen
+  - com_class_rosters
+  - cvm-batch-1
+  - cvm-batch-2
+  - london-maps-batch-2
+  - time_of_resolve
+dcterms_tableOfContents:
+  collections:
+  - cvm-batch-1
+dcterms_temporal:
+  collections:
+  - apfelbaum-ww1
+  - berger_cloonan_batch_a
+  - cvm-batch-1
+  - cvm-batch-2
+  - time_of_resolve
+dcterms_type:
+  collections:
+  - apfelbaum-ww1
+  - basbanes-texts
+  - BasbanesEternalPassion
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - berger_cloonan_batch_4
+  - berger_cloonan_batch_a
+  - brazos-maps
+  - bryan-150
+  - charting-texas
+  - cherokee-freedmen-corrected
+  - cherokee-freedmen
+  - com_class_rosters
+  - cvm-batch-1
+  - cvm-batch-2
+  - graydiary-saf
+  - la_linda_poblana
+  - london-maps-batch-2
+  - scifi-exhibit-2021
+  - time_of_resolve
+fedora_created:
+  collections:
+  - alice_in_wonderland
+  - apfelbaum-ww1
+  - basbanes-texts
+  - BasbanesEternalPassion
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - berger_cloonan_batch_4
+  - berger_cloonan_batch_a
+  - brazos-maps
+  - bryan-150
+  - charting-texas
+  - cherokee-freedmen-corrected
+  - cherokee-freedmen
+  - com_class_rosters
+  - cvm-batch-1
+  - cvm-batch-2
+  - graydiary-saf
+  - houston_oil_company_minutes
+  - la_linda_poblana
+  - london-collection
+  - london-maps-batch-2
+  - scifi-exhibit-2021
+  - Stephen_Powys_Marks_London_Collection
+  - time_of_resolve
+fedora_createdBy:
+  collections:
+  - alice_in_wonderland
+  - apfelbaum-ww1
+  - basbanes-texts
+  - BasbanesEternalPassion
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - berger_cloonan_batch_4
+  - berger_cloonan_batch_a
+  - brazos-maps
+  - bryan-150
+  - charting-texas
+  - cherokee-freedmen-corrected
+  - cherokee-freedmen
+  - com_class_rosters
+  - cvm-batch-1
+  - cvm-batch-2
+  - graydiary-saf
+  - houston_oil_company_minutes
+  - la_linda_poblana
+  - london-collection
+  - london-maps-batch-2
+  - scifi-exhibit-2021
+  - Stephen_Powys_Marks_London_Collection
+  - time_of_resolve
+fedora_hasParent:
+  collections:
+  - alice_in_wonderland
+  - apfelbaum-ww1
+  - basbanes-texts
+  - BasbanesEternalPassion
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - berger_cloonan_batch_4
+  - berger_cloonan_batch_a
+  - brazos-maps
+  - bryan-150
+  - charting-texas
+  - cherokee-freedmen-corrected
+  - cherokee-freedmen
+  - com_class_rosters
+  - cvm-batch-1
+  - cvm-batch-2
+  - graydiary-saf
+  - houston_oil_company_minutes
+  - la_linda_poblana
+  - london-collection
+  - london-maps-batch-2
+  - scifi-exhibit-2021
+  - Stephen_Powys_Marks_London_Collection
+  - time_of_resolve
+fedora_lastModified:
+  collections:
+  - alice_in_wonderland
+  - apfelbaum-ww1
+  - basbanes-texts
+  - BasbanesEternalPassion
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - berger_cloonan_batch_4
+  - berger_cloonan_batch_a
+  - brazos-maps
+  - bryan-150
+  - charting-texas
+  - cherokee-freedmen-corrected
+  - cherokee-freedmen
+  - com_class_rosters
+  - cvm-batch-1
+  - cvm-batch-2
+  - graydiary-saf
+  - houston_oil_company_minutes
+  - la_linda_poblana
+  - london-collection
+  - london-maps-batch-2
+  - scifi-exhibit-2021
+  - Stephen_Powys_Marks_London_Collection
+  - time_of_resolve
+fedora_lastModifiedBy:
+  collections:
+  - alice_in_wonderland
+  - apfelbaum-ww1
+  - basbanes-texts
+  - BasbanesEternalPassion
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - berger_cloonan_batch_4
+  - berger_cloonan_batch_a
+  - brazos-maps
+  - bryan-150
+  - charting-texas
+  - cherokee-freedmen-corrected
+  - cherokee-freedmen
+  - com_class_rosters
+  - cvm-batch-1
+  - cvm-batch-2
+  - graydiary-saf
+  - houston_oil_company_minutes
+  - la_linda_poblana
+  - london-collection
+  - london-maps-batch-2
+  - scifi-exhibit-2021
+  - Stephen_Powys_Marks_London_Collection
+  - time_of_resolve
+fedora_writable:
+  collections:
+  - alice_in_wonderland
+  - apfelbaum-ww1
+  - basbanes-texts
+  - BasbanesEternalPassion
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - berger_cloonan_batch_4
+  - berger_cloonan_batch_a
+  - brazos-maps
+  - bryan-150
+  - charting-texas
+  - cherokee-freedmen-corrected
+  - cherokee-freedmen
+  - com_class_rosters
+  - cvm-batch-1
+  - cvm-batch-2
+  - graydiary-saf
+  - houston_oil_company_minutes
+  - la_linda_poblana
+  - london-collection
+  - london-maps-batch-2
+  - scifi-exhibit-2021
+  - Stephen_Powys_Marks_London_Collection
+  - time_of_resolve
+files:
+  collections:
+  - alice_in_wonderland
+  - apfelbaum-ww1
+  - basbanes-texts
+  - BasbanesEternalPassion
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - berger_cloonan_batch_4
+  - berger_cloonan_batch_a
+  - brazos-maps
+  - bryan-150
+  - charting-texas
+  - cherokee-freedmen-corrected
+  - cherokee-freedmen
+  - com_class_rosters
+  - cvm-batch-1
+  - cvm-batch-2
+  - graydiary-saf
+  - houston_oil_company_minutes
+  - la_linda_poblana
+  - london-collection
+  - london-maps-batch-2
+  - scifi-exhibit-2021
+  - Stephen_Powys_Marks_London_Collection
+  - time_of_resolve
+ldp_contains:
+  collections:
+  - alice_in_wonderland
+  - apfelbaum-ww1
+  - basbanes-texts
+  - BasbanesEternalPassion
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - berger_cloonan_batch_4
+  - berger_cloonan_batch_a
+  - brazos-maps
+  - bryan-150
+  - charting-texas
+  - cherokee-freedmen-corrected
+  - cherokee-freedmen
+  - com_class_rosters
+  - cvm-batch-1
+  - cvm-batch-2
+  - graydiary-saf
+  - houston_oil_company_minutes
+  - la_linda_poblana
+  - london-collection
+  - london-maps-batch-2
+  - scifi-exhibit-2021
+  - Stephen_Powys_Marks_London_Collection
+  - time_of_resolve
+tamudigital_local/coordinates:
+  collections:
+  - brazos-maps
+tamudigital_local/details:
+  collections:
+  - berger_cloonan
+  - berger_cloonan_batch_3
+  - berger_cloonan_batch_4
+  - berger_cloonan_batch_a
+  - bryan-150
+  - cvm-batch-1
+  - cvm-batch-2
+tamudigital_localcountry:
+  collections:
+  - alice_in_wonderland
