@@ -92,6 +92,16 @@ Produces `collections.csv` with columns:
 
 ---
 
+### ferry ia-reader-metadata "/Users/mark.baggett/tamu-dc-labs/ia-bookreader-metadata"
+
+Creates metadata for IA Bookreader Items based on a path.
+
+**Example**:
+
+```bash
+ferry ia-reader-metadata "/Users/mark.baggett/tamu-dc-labs/ia-bookreader-metadata"
+```
+
 ## Library Usage
 
 The package exposes several classes for working with Fedora objects directly:

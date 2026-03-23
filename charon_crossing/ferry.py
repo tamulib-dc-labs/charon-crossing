@@ -1,8 +1,10 @@
 import click
 from . import FedoraWork
 from .fedora import FedoraCollection
+from .iabookreader import IABookReaderMetadata
 from csv import DictWriter
 from tqdm import tqdm
+import os
 
 
 @click.group()
@@ -49,6 +51,21 @@ def get_members(uri):
         writer = DictWriter(f, fieldnames=list(all_collections[0].keys()))
         writer.writeheader()
         writer.writerows(all_collections)
+
+
+@cli.command()
+@click.argument("path")
+def ia_reader_metadata(path):
+    all_metadata = []
+    for path, dirs, files in os.walk(path):
+        for file in files:
+            if file.endswith(".xml"):
+                reader = IABookReaderMetadata(os.path.join(path, file))
+                all_metadata.append(reader.build())
+    with open("all_metadata.csv", "w", newline="", encoding="utf-8") as mycsv:
+        writer = DictWriter(mycsv, fieldnames=list(all_metadata[0].keys()))
+        writer.writeheader()
+        writer.writerows(all_metadata)
 
 
 if __name__ == "__main__":
