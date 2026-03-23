@@ -26,52 +26,82 @@ class IABookReaderMetadata:
         return all_values
 
     def get_year(self):
-        return self.root.xpath('//year/text()')[0]
+        try:
+            return self.root.xpath('//year/text()')[0]
+        except IndexError:
+            return 9999
 
     def get_title(self):
-        return self.root.xpath('//title/text()')[0]
+        try:
+            return self.root.xpath('//title/text()')[0]
+        except IndexError:
+            return ""
 
     def get_identifier(self):
         return self.root.xpath('//identifier/text()')[0]
 
     def get_related_item(self):
-        return self.root.xpath('//bookrecord/text()')[0]
+        try:
+            return self.root.xpath('//bookrecord/text()')[0]
+        except IndexError:
+            return ""
 
     def get_rights(self):
-        if int(self.year) < 1930:
+        year = self.year.split('-')[0]
+        if int(year) < 1930:
             return "http://rightsstatements.org/vocab/NoC-US/1.0/"
         else:
             return "http://rightsstatements.org/vocab/InC/1.0/"
 
     def get_rights_details(self):
-        if int(self.year) < 1930:
+        year = self.year.xpath('//year/text()')[0].split('-')[0]
+        if int(year) < 1930:
             return "No Copyright - United States"
         else:
             return "In Copyright"
 
     def build(self):
-        return {
-            "image": "",
-            "label": f"{self.year} {self.get_title()}",
-            "identifier": [
-                {
-                    "value": self.identifier,
-                    "authority": "local"
-                }
-            ],
-            "node_uuid": str(uuid4()),
-            "format": "reformatted digital",
-            "type": "Book",
-            "title_alternative": self.get_title(),
-            "digital_publisher": "Texas A&M University Libraries",
-            "rights": self.get_rights(),
-            "language": "eng",
-            "ismemberof": "e777b54b-d183-467a-a57d-adbe9a9037bf",
-            "description": self.description,
-            "related_item": self.get_related_item(),
-            "date_issued": self.get_year(),
-            "content_type": ["Text", "StillImage"]
-        }
+        if self.year != 9999:
+            return {
+                "image": "",
+                "label": f"{self.year} {self.get_title()}",
+                "identifier": [
+                    {
+                        "value": self.identifier,
+                        "authority": "local"
+                    }
+                ],
+                "node_uuid": str(uuid4()),
+                "format": "reformatted digital",
+                "type": "Book",
+                "title_alternative": self.get_title(),
+                "digital_publisher": "Texas A&M University Libraries",
+                "rights": self.get_rights(),
+                "language": "eng",
+                "ismemberof": "e777b54b-d183-467a-a57d-adbe9a9037bf",
+                "description": self.description,
+                "related_item": self.get_related_item(),
+                "date_issued": self.get_year(),
+                "content_type": ["Text", "StillImage"]
+            }
+        else:
+            return {
+                "image": "",
+                "label": f"",
+                "identifier": "",
+                "node_uuid": "",
+                "format": "",
+                "type": "",
+                "title_alternative": "",
+                "digital_publisher": "",
+                "rights": "",
+                "language": "",
+                "ismemberof": "",
+                "description": "",
+                "related_item": "",
+                "date_issued": "",
+                "content_type": ""
+            }
 
 
 if __name__ == "__main__":
