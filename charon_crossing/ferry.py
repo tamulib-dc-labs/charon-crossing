@@ -16,7 +16,8 @@ def cli():
 @click.argument("uri")
 def ferry(uri):
     collection = FedoraCollection(uri)
-    members = collection.get_members()
+    members = collection.get_contains()
+    print(members)
 
     rows = []
     for member in tqdm(members):

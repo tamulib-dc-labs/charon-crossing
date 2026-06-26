@@ -17,6 +17,7 @@ sparqlwrapper = "^2.0.0"
 click = "^8.0.0"
 pyyaml = "^6.0.3"
 lxml = "^6.0.2"
+requests = "^2.33.0"
 
 [tool.poetry.scripts]
 ferry = "charon_crossing.ferry:cli"
